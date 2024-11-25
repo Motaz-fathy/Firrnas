@@ -1,0 +1,88 @@
+.main-extend{
+    width: 100%;
+      display: flex;
+        justify-content: center;
+        align-items: center;
+  }
+  
+  .extend-vision{
+    background-image: url("https: //framerusercontent.com/images/Fo4j7vhs11cr34tg7eYbSRwafc.png?scale-down-to=2048 2048w,");
+    background-size: contain;
+    background-position: center;
+    color: rgb(214, 202, 202);
+    display: flex;
+    justify-content: center;
+  position:relative;
+    align-items: center;
+    flex-direction: column;
+  border-radius: 35px;
+  min-height:300px
+  }
+  .extend-vision h3{
+  font-size: 36px;
+  margin:   20px;
+  }
+  .extend-vision h6{
+    font-size: 14px;
+    color:var(--second--color);
+    margin-bottom: 40px;
+  }
+  .extend-vision button{
+  margin-top: 30px;
+  
+  }
+  .extend-vision button {
+    background-color: #352B87 !important;
+    width: 155px !important;
+    border: none;
+  }
+  
+  .extend-vision button {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    /* Ensures ::after element stays within button bounds */
+    background-color: transparent;
+    color: var(--main--color);
+    border-radius: 50px;
+    width: 135px;
+    height: 50px;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    transition: color 0.4s ease;
+    /* Transition color change on text */
+  }
+  
+  .extend-vision button::after {
+    cursor: pointer;
+    position: absolute;
+    border-radius: 50%;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    width: 0px;
+    height: 0;
+    z-index: -1;
+    background-color: var(--main--color);
+    transition: all 0.4s ease;
+    /* Transition all properties smoothly */
+  }
+  
+  .extend-vision button:hover {
+    color: #000;
+    font-weight: 600;
+    /* Change text color on hover */
+  }
+  
+  .extend-vision button:hover::after {
+    width: 100%;
+    height: 50px;
+    left: 0;
+    border-radius: 50px;
+    color: #000;
+    background-color: var(--main--color);
+    z-index: -1;
+    /* Background color expands to cover button */
+  }
+  
