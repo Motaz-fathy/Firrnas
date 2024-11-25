@@ -1,0 +1,210 @@
+.faq-wrapper {
+    background-color: transparent;
+  }
+  
+  .faq-wrapper .faq-title .faqs-Frequently {
+    border-bottom-width: 1px;
+    border-color: rgba(78, 71, 245, 0.5);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-top-width: 1px;
+    background-color: rgba(78, 71, 245, 0.15);
+    border-radius: 100px;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 1px 5px;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    line-height: 10px;
+  }
+  
+  .faq-wrapper .faq-title .faqs-Frequently p {
+    color: rgb(171, 168, 245);
+    font-family: Inter-Medium, Inter, "Inter Placeholder", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0em;
+    line-height: 25px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+  }
+  
+  .faq-wrapper .faq-title h2{
+    color:var(--main--color);
+    font-size: 36px;
+  }
+  .faq-wrapper .faq-title h6{
+    color:var(--second--color);
+  
+  font-size: 16px;}
+  
+  
+  .faq-wrapper .faq-list{
+        border-bottom-width: 1px;
+          border-color:  rgb(40, 37, 69);
+          border-left-width: 1px;
+          border-right-width: 1px;
+          border-style: solid;
+          border-top-width: 1px;
+          background-color:  rgb(21, 19, 41);
+          /* width: 100%;  */
+          border-radius: 20px;
+          transform: none;
+          transform-origin: 50% 50% 0px;
+          align-content: flex-start;
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          gap: 0px;
+  
+          justify-content: flex-start;
+          overflow: hidden;
+          padding: 0 20px;
+          position: relative;
+          will-change: transform
+  }
+  
+  .faq-wrapper .faq-list .faq-item{
+        transform: none;
+          transform-origin: 50% 50% 0px;
+          -webkit-user-select: none;
+          align-content: center;
+          align-items: center;
+          cursor: pointer;
+          display: flex;
+          flex: none;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          gap: 24px;
+  
+          justify-content: flex-start;
+          overflow: visible;
+          padding: 20px 0 20px 40px;
+          position: relative;
+          user-select: none;
+          width: 100%;
+          color:var(--main--color)
+  }
+  
+  .faq-wrapper .faq-list .faq-item {
+    position: relative;
+    /* Necessary for positioning the :after element */
+  }
+  .faq-quest  {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  
+    /* Indicate that it's clickable */
+  }
+  .faq-quest h6 {
+  font-size:15px;
+    /* Indicate that it's clickable */
+  
+  }
+  .faq-quest span {
+  font-size:22px;
+   color:var(--second--color);
+    margin-left: -25px
+  
+  }
+  
+  .faq-icon {
+    margin-right: 10px;
+    /* Space between icon and text */
+    transition: transform 0.3s ease;
+    /* Smooth rotation transition */
+  }
+  
+  .rotate {
+    transform: rotate(45deg);
+    /* Rotate the icon when open */
+    font-size: 17px;
+  }
+  
+  .faq-item {
+    position: relative;
+  }
+  
+  
+  
+  .faq-item:after {
+    content: '';
+    /* Required to create the pseudo-element */
+    display: block;
+    height: 0.5px;
+    /* Adjust the height for thickness */
+    background-color: var(--second--color);
+    /* Change to desired color */
+    position: absolute;
+    /* Positioning relative to the faq-item */
+    bottom: -4px;
+    right: 0;
+  
+    /* Adjust to position the line correctly */
+    width: 100%;
+    /* Full width */
+  }
+  
+  .faq-item:last-child:after {
+    content: none;
+    /* Remove the line after the last item */
+  }
+  
+  .faq-wrapper .faq-list .faq-item .faq-quest{
+  color:var(--main--color);
+  
+  }
+  .faq-wrapper .faq-list .faq-item .faq-answer{
+    color:var(--second--color);
+    font-size:  14px;
+    margin-top: 10px;
+    transition: max-height 0.3s ease-in-out;
+  
+  }
+  .faq-answer.open {
+   
+    transition: max-height 0.3s ease-in-out;
+    /* Set a max-height that's large enough to fit the content */
+  }
+  .faq-icon {
+    margin-left: 8px;
+    /* Space between question and icon */
+    font-size: 18px;
+    /* Adjust icon size */
+    color: var(--second--color);
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .faq-wrapper .faq-list .faq-item .faq-answer  p{
+    line-height: 20px;
+  }
+  .faq-divider{
+    width: 97%;
+    color:var(--main--color);
+    height:1px;
+    background-color: var(--main--color);
+  }
+  
+  @media only screen and (max-width: 768px) {
+  .faq-wrapper .faq-list{
+    width:90%
+  }
+  .faq-wrapper{
+    display: flex;
+    align-items: center;
+  }
+  .faq-divider {
+  
+    color: var(--main--color);
+    height: 1px;
+    background-color: var(--main--color);
+  }
+  }

@@ -1,0 +1,134 @@
+nav{
+    margin-top: 40px;
+  }
+  
+  
+  .navbar {
+    width: 100%;
+    height: auto;
+    border-radius: 0px !important;
+    font-size: 17px;
+    font-weight: 500;
+    position: fixed;
+    display: flex !important;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    margin:0 20px;
+  
+  }
+  
+  .container-fluid .nav-toggler {
+    border: rgb(40, 37, 69) solid 2px;
+    width: 60px;
+    height: 60px;
+    display: none ;
+    border-radius: 50%;
+  
+    justify-content: center;
+    align-items: center;
+    outline: none !important;
+    color: rgba(255, 245, 245, 0);
+    position: relative;
+    right: 40px;
+  
+  }
+  .container-fluid .nav-container {
+  width: 100%;
+  margin-right: 30px;
+  margin-top: -10px;
+  }
+  
+  
+   .navbar-brand img {
+     display: none;
+     width: 50px;
+   }
+  .nav-content {
+    margin: auto;
+  
+    column-gap: 20px;
+    padding: 12px 25px;
+    border-color: rgb(40, 37, 69);
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-top-width: 1px;
+    backdrop-filter: blur(15px);
+    background-color: rgba(16, 14, 31, 0.123);
+    border-radius: 100px;
+    opacity: 1;
+  
+    justify-content: center !important;
+    align-items: center !important;
+  
+  }
+  
+  
+  nav .nav-content a {
+    color: var(--second--color) !important;
+    border: none;
+    font-size: 14px;
+      text-decoration: none;
+  }
+  nav .nav-content a:hover {
+    text-decoration: none;
+    color:var(--main--color)
+  }
+  
+  nav .nav-content  a.active {
+    color: var(--main--color) !important;
+    border: none;
+  }
+  
+  
+  
+  
+  
+  
+  
+  @media screen and (max-width: 992px) {
+    nav .container {
+  
+      margin: 10px
+    }
+  
+    .navbar{
+      top:10px;
+    }
+    .container-fluid .nav-toggler{
+      display: block;
+    }
+      .container-fluid .nav-container {
+        width: 100%;
+        margin-right: 40px;
+        margin-top: 10px;
+      }
+      .navbar-brand img {
+        display: block;
+        width: 50px;
+      }
+  
+    .nav-content {
+      border-radius: 20px;
+      width: 95%
+    }
+  
+    .nav-content a {
+      margin: 7px 0;
+    }
+  
+  
+  .navbar-brand{
+    display: block !important;
+      width: 80px;
+  }
+    .container-fluid button {
+  
+      text-align: center;
+      margin-left: auto;
+    }
+  }
+  
